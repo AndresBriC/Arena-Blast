@@ -76,7 +76,7 @@ jobs:
        env:
          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_API_KEY }}
          CHANNEL: HTML
-         ITCH_GAME: arena-blast
+         ITCH_GAME: Arena Blast
          ITCH_USER: deRedBlob
          BRANCH: itch-io
          PACKAGE: build/WebGL
