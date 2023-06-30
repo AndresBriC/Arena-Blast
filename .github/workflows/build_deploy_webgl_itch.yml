@@ -69,7 +69,7 @@ jobs:
      - name: Deploy 🚀
        uses: JamesIves/github-pages-deploy-action@4.1.4
        with:
-         branch: main
+         branch: itch-io
          folder: build/WebGL
          
      - uses: manleydev/butler-publish-itchio-action@master
@@ -78,5 +78,5 @@ jobs:
          CHANNEL: HTML
          ITCH_GAME: arena-blast
          ITCH_USER: deRedBlob
-         BRANCH: main
+         BRANCH: itch-io
          PACKAGE: build/WebGL
