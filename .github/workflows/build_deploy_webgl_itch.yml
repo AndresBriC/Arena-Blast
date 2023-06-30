@@ -1,4 +1,4 @@
-name: GameCI build and upload to Itch.io 🎮
+name: GameCI Template 🎮
 
 on: push
 
@@ -77,6 +77,6 @@ jobs:
          BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_API_KEY }}
          CHANNEL: HTML
          ITCH_GAME: arena-blast
-         ITCH_USER: deredblob
+         ITCH_USER: deRedBlob
          BRANCH: main
          PACKAGE: build/WebGL
