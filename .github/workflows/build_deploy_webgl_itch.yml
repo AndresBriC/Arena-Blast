@@ -1,4 +1,4 @@
-name: GameCI Template 🎮
+name: GameCI build and upload to Itch.io 🎮
 
 on: push
 
@@ -69,7 +69,7 @@ jobs:
      - name: Deploy 🚀
        uses: JamesIves/github-pages-deploy-action@4.1.4
        with:
-         branch: itch-io
+         branch: main
          folder: build/WebGL
          
      - uses: manleydev/butler-publish-itchio-action@master
@@ -78,5 +78,5 @@ jobs:
          CHANNEL: HTML
          ITCH_GAME: arena-blast
          ITCH_USER: deredblob
-         BRANCH: itch-io
+         BRANCH: main
          PACKAGE: build/WebGL
