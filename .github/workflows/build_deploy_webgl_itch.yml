@@ -74,9 +74,9 @@ jobs:
          
      - uses: manleydev/butler-publish-itchio-action@master
        env:
-         BUTLER_CREDENTIALS: ${{ secrets.ITCH_IO_API_KEY }}
+         BUTLER_CREDENTIALS: ${{ secrets.BUTLER_API_KEY }}
          CHANNEL: HTML
-         ITCH_GAME: Arena Blast
-         ITCH_USER: deRedBlob
+         ITCH_GAME: arena-blast # Game's name on itch.io
+         ITCH_USER: deRedBlob # itch.io username
          BRANCH: itch-io
          PACKAGE: build/WebGL
